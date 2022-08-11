@@ -1,5 +1,5 @@
-const { getUserList } = require("../controller/user");
-const { Router } = require("express");
+const { getUserList } = require('../controller/user');
+const { Router } = require('express');
 const router = Router();
-router.get("/getUser", getUserList);
+router.post('/productList', getUserList);
 module.exports = router;

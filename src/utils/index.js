@@ -21,6 +21,14 @@ exports.responseData = (code, data, mes) => {
   return {
     code,
     data,
-    mes: mes || "success",
+    mes: mes || 'success',
   };
+};
+
+/**
+ * @description 返回一个异步的数据
+ * @param {any} data
+ */
+exports.asynchronous = (data) => {
+  return Promise.resolve(data);
 };
