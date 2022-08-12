@@ -4,9 +4,10 @@
     "description": "后端脚手架",
     "main": "index.js",
     "scripts": {
-        "dev": "node-dev src/app.js",
+        "dev": "cross-env APP_ENV=dev node-dev src/app.js",
         "build": "npm run clean && webpack --config webpack.config.js",
-        "prod": "node app.js",
+        "alpha": "cross-env APP_ENV=alpha node app.js",
+        "prod": "cross-env APP_ENV=prod node app.js",
         "clean": "rimraf dist"
     },
     "author": "lgf",
@@ -21,6 +22,7 @@
         "@babel/preset-env": "^7.18.10",
         "babel-loader": "^8.2.5",
         "copy-webpack-plugin": "^11.0.0",
+        "cross-env": "^7.0.3",
         "node-dev": "^7.4.3",
         "rimraf": "^3.0.2",
         "ts-node-dev": "^2.0.0",

@@ -1,6 +1,8 @@
 const { responseData, statusCode, asynchronous } = require('../utils');
+const { db } = require('../config');
 exports.getUserList = async (req, res, next) => {
   console.log('res', req.query, req.body);
+  console.log('数据库信息====>>', db());
   const list = [
     {
       id: 1,

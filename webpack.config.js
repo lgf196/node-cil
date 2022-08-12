@@ -3,7 +3,7 @@ const path = require('path');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 /**
  * @author lgf
- * @description 取出package.json中的生产依赖
+ * @description 取出package.json中的生产依赖，你进行打包
  */
 const _externals = () => {
   let manifest = require('./package.json');

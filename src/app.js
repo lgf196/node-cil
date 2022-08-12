@@ -17,5 +17,5 @@ app.get('/', (req, res) => {
 app.use('/api', [userRouter, productRouter]);
 app.use([error404, errorHandler]);
 app.listen(servePort, () => {
-  console.log(`Example app listening on port ${servePort}`, 111);
+  console.log(`Example app listening on port ${servePort}`);
 });
