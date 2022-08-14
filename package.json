@@ -5,10 +5,10 @@
     "main": "index.js",
     "scripts": {
         "dev": "cross-env APP_ENV=dev node-dev src/app.js",
-        "build": "npm run clean && webpack --config webpack.config.js",
+        "build": "npm run clear && webpack --config webpack.config.js",
         "alpha": "cross-env APP_ENV=alpha node app.js",
         "prod": "cross-env APP_ENV=prod node app.js",
-        "clean": "rimraf dist"
+        "clear": "rimraf dist"
     },
     "author": "lgf",
     "license": "ISC",
